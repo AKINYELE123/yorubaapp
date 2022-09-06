@@ -33,25 +33,10 @@ class HexColor extends Color{
 
 Color purple = HexColor("#7237C5");
 Color grey = HexColor("#000000");
-// Color gradient2 = HexColor("##168907");
-// Color grey = HexColor("#969696");
 Color background1 = HexColor("#D5C3EE");
 Color background2 = HexColor("#F1DC1B");
 Color background3 = HexColor("#1CC4AB");
 Color background4 = HexColor("#2D85DE");
  Color white = HexColor("#FFFFFF");
  Color blue = HexColor("#66ABD6");
-// Color range = HexColor("#FF8A00");
-// Color text = HexColor("#5E5E5E");
-// Color icon = HexColor("#FBFBFB");
-// Color first = HexColor("#3D3D3D");
-// Color tab = HexColor("#FFF4E7");
-// Color color = HexColor("#7D7D7D");
-// Color background = HexColor("#E9E9E9");
-// Color command = HexColor("#4C4C4C");
-// Color hint = HexColor("#BEBEBE");
-// Color red = HexColor("#FF0000");
-//
-
-
 

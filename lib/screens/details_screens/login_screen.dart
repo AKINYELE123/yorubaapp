@@ -37,26 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
-  _login() async {
-    var data = {
-      'phone_number' : numberController.text,
-    };
 
-    var res = await CallApi().postData(data, 'login');
-    var body = json.decode(res.body);
-    print(body);
-    if(body['success']){
-      SharedPreferences localStorage = await SharedPreferences.getInstance();
-      localStorage.setString('token', body['token']);
-      localStorage.setString('user', json.encode(body['user']));
-      Navigator.push(
-          context,
-          new MaterialPageRoute(
-              builder: (context) => DashBoard()));
-    }else{
-      _showMsg(body['message']);
-    }
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +81,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           buildTextPasswordFormField(),
                           SizedBox(height: 30,),
                           GestureDetector(
-                            onTap: ()=> _login(),
+                            onTap: ()=> Navigator.push(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) => DashBoard())),
                             child: Container(
                               width: double.maxFinite,
                               child: AppButton(

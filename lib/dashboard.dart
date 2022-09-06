@@ -52,7 +52,7 @@ class _DashBoardState extends State<DashBoard> {
                       Container(
                           width: 170,
                           child: Text("Start your yoruba learning now", style: TextStyle(color: white, fontSize: 20),)),
-                      const SizedBox(height: 80,width: 32,),
+                      const SizedBox(height: 80,width: 15,),
                       Image.asset("asset/images/child.png")
                     ],
                   ),
@@ -74,7 +74,7 @@ class _DashBoardState extends State<DashBoard> {
                           GestureDetector(
                             onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=>MenuScreen())),
                             child: Container(
-                              width: 180,
+                              width: 170,
                               height: 200,
                               decoration: BoxDecoration(
                                   color: background1,
@@ -91,7 +91,7 @@ class _DashBoardState extends State<DashBoard> {
                           GestureDetector(
                             onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=>MenuNumbers())),
                             child: Container(
-                              width: 180,
+                              width: 170,
                               height: 200,
                               decoration: BoxDecoration(
                                   color: background2,
@@ -112,7 +112,7 @@ class _DashBoardState extends State<DashBoard> {
                   Column(
                     children: [
                       Container(
-                        width: 180,
+                        width: 170,
                         height: 200,
                         decoration: BoxDecoration(
                             color: background3,
@@ -126,7 +126,7 @@ class _DashBoardState extends State<DashBoard> {
                   Column(
                     children: [
                       Container(
-                        width: 180,
+                        width: 170,
                         height: 200,
                         decoration: BoxDecoration(
                             color: background4,
